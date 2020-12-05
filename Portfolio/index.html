@@ -5,11 +5,6 @@
     <meta charset="utf-8" />
     <meta name="author" content="Jakob Larsen" />
     <link href="css/master.css" rel="stylesheet" type="text/css" />
-    <script
-      src="https://kit.fontawesome.com/f20c95b228.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
@@ -126,34 +121,49 @@
     <section id="portfolio">
       <h1 class="headerPortfolio">PORTFOLIO</h1>
       <div class="portfolioGrid">
-        <div class="portfolioGridItem">
+        <a
+          href="https://byjakob.dk/dogsportdkcase.html"
+          class="portfolioGridItem"
+        >
           <p class="portfolioText">Webdesign, webudvikling</p>
           <h1 class="portfolioHeader">DogsportDK</h1>
-        </div>
-        <div class="portfolioGridItem2">
+        </a>
+
+        <a href="https://byjakob.dk/nimbuscase.html" class="portfolioGridItem2">
           <p class="portfolioText">App prototyping, design</p>
           <h1 class="portfolioHeader">Nimbus</h1>
-        </div>
+        </a>
       </div>
       <div class="portfolioGrid2">
-        <div class="portfolioGridItem2-1">
+        <a href="https://byjakob.dk/fotocase.html" class="portfolioGridItem2-1">
           <p class="portfolioText">Fotografering, redigering</p>
           <h1 class="portfolioHeader">Produktfoto</h1>
-        </div>
-        <div class="portfolioGridItem2-2">
+        </a>
+
+        <a
+          href="https://byjakob.dk/klimacase.html"
+          class="portfolioGridItem2-2"
+        >
           <p class="portfolioText">Installation, design</p>
           <h1 class="portfolioHeader">Klimabomben</h1>
-        </div>
+        </a>
       </div>
       <div class="portfolioGrid3">
-        <div class="portfolioGridItem3-1">
+        <a
+          href="https://byjakob.dk/playmatescase.html"
+          class="portfolioGridItem3-1"
+        >
           <p class="portfolioText">App prototyping, design</p>
           <h1 class="portfolioHeader">Playmates</h1>
-        </div>
-        <div class="portfolioGridItem3-2">
+        </a>
+
+        <a
+          href="https://byjakob.dk/pancakecase.html"
+          class="portfolioGridItem3-2"
+        >
           <p class="portfolioText">Film produktion, stop-motion</p>
           <h1 class="portfolioHeader">Pancake SMASH!</h1>
-        </div>
+        </a>
       </div>
     </section>
     <section id="contact">
@@ -184,7 +194,7 @@
             >
           </div>
           <br />
-          <div>
+          <div class="soMeIconDiv">
             <a href="https://www.facebook.com/dklarzen" target="_blank">
               <img
                 class="soMeIcon"
@@ -204,7 +214,7 @@
 
         <div class="contactGridItem2">
           <div class="contactForm">
-            <form>
+            <form action="contactform.php" method="post">
               <img
                 class="nameIcon"
                 src="assets/icons/nameicon.png"
@@ -243,7 +253,12 @@
                 placeholder="Din besked*"
                 required
               ></textarea>
-              <input class="formSubmit" type="submit" value="Send" />
+              <input
+                class="formSubmit"
+                type="submit"
+                name="submit"
+                value="Send"
+              />
             </form>
           </div>
         </div>
